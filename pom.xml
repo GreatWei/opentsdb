@@ -88,83 +88,83 @@
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
         <executions>
-          <execution>
-            <id>generate-build-data</id>
-            <configuration>
-              <executable>build-aux/gen_build_data.sh</executable>
-              <!-- optional -->
-              <arguments>
-                <argument>target/generated-sources/net/opentsdb/tools/BuildData.java</argument>
-                <argument>net.opentsdb.tools</argument>
-                <argument>BuildData</argument>
-              </arguments>
-            </configuration>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>create-plugin-test-jar</id>
-            <!-- TODO: Put the jar in the target dir and fix surefire conf. -->
-            <configuration>
-              <executable>jar</executable>
-              <arguments>
-                <argument>cvfm</argument>
-                <argument>plugin_test.jar</argument>
-                <argument>test/META-INF/MANIFEST.MF</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/plugin/DummyPluginA.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/plugin/DummyPluginB.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/search/DummySearchPlugin.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/tsd/DummyHttpSerializer.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/tsd/DummyHttpRpcPlugin.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/tsd/DummyRpcPlugin.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/tsd/DummyRTPublisher.class</argument>
-                <argument>-C</argument>
-                <argument>target/test-classes</argument>
-                <argument>net/opentsdb/tsd/DummySEHPlugin.class</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.plugin.DummyPlugin</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.search.SearchPlugin</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.tsd.HttpSerializer</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.tsd.HttpRpcPlugin</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.tsd.RpcPlugin</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.tsd.RTPublisher</argument>
-                <argument>-C</argument>
-                <argument>test</argument>
-                <argument>META-INF/services/net.opentsdb.tsd.StorageExceptionHandler</argument>
-              </arguments>
-            </configuration>
-            <phase>test-compile</phase>
-            <goals>
-              <goal>exec</goal>
-            </goals>
-          </execution>
+<!--          <execution>-->
+<!--            <id>generate-build-data</id>-->
+<!--            <configuration>-->
+<!--              <executable>build-aux/gen_build_data.sh</executable>-->
+<!--              &lt;!&ndash; optional &ndash;&gt;-->
+<!--              <arguments>-->
+<!--                <argument>target/generated-sources/net/opentsdb/tools/BuildData.java</argument>-->
+<!--                <argument>net.opentsdb.tools</argument>-->
+<!--                <argument>BuildData</argument>-->
+<!--              </arguments>-->
+<!--            </configuration>-->
+<!--            <phase>generate-sources</phase>-->
+<!--            <goals>-->
+<!--              <goal>exec</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--          <execution>-->
+<!--            <id>create-plugin-test-jar</id>-->
+<!--            &lt;!&ndash; TODO: Put the jar in the target dir and fix surefire conf. &ndash;&gt;-->
+<!--            <configuration>-->
+<!--              <executable>jar</executable>-->
+<!--              <arguments>-->
+<!--                <argument>cvfm</argument>-->
+<!--                <argument>plugin_test.jar</argument>-->
+<!--                <argument>test/META-INF/MANIFEST.MF</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/plugin/DummyPluginA.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/plugin/DummyPluginB.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/search/DummySearchPlugin.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/tsd/DummyHttpSerializer.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/tsd/DummyHttpRpcPlugin.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/tsd/DummyRpcPlugin.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/tsd/DummyRTPublisher.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>target/test-classes</argument>-->
+<!--                <argument>net/opentsdb/tsd/DummySEHPlugin.class</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.plugin.DummyPlugin</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.search.SearchPlugin</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.tsd.HttpSerializer</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.tsd.HttpRpcPlugin</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.tsd.RpcPlugin</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.tsd.RTPublisher</argument>-->
+<!--                <argument>-C</argument>-->
+<!--                <argument>test</argument>-->
+<!--                <argument>META-INF/services/net.opentsdb.tsd.StorageExceptionHandler</argument>-->
+<!--              </arguments>-->
+<!--            </configuration>-->
+<!--            <phase>test-compile</phase>-->
+<!--            <goals>-->
+<!--              <goal>exec</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
         </executions>
       </plugin>
 
@@ -564,7 +564,7 @@
 <!--        <dependency>-->
 <!--          <groupId>com.pythian.opentsdb</groupId>-->
 <!--          <artifactId>asyncbigtable</artifactId>-->
-<!--          <version>0.4.3</version>-->
+<!--          <version>0.0</version>-->
 <!--          <classifier>jar-with-dependencies</classifier>-->
 <!--        </dependency>-->
       </dependencies>
@@ -578,14 +578,14 @@
         <activeByDefault>false</activeByDefault>
       </activation>
 
-<!--      <dependencies>-->
+      <dependencies>
 <!--        <dependency>-->
 <!--          <groupId>net.opentsdb</groupId>-->
 <!--          <artifactId>asynccassandra</artifactId>-->
 <!--          <version>0.0</version>-->
 <!--          <classifier>jar-with-dependencies</classifier>-->
 <!--        </dependency>-->
-<!--      </dependencies>-->
+      </dependencies>
 
     </profile>
   </profiles>

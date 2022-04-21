@@ -1,0 +1,25 @@
+-classpath
+'D:/code/opentsdb/target/classes;C:/Users/zhang/.m2/repository/com/stumbleupon/async/1.4.0/async-1.4.0.jar;C:/Users/zhang/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar;C:/Users/zhang/.m2/repository/org/hbase/asynchbase/1.8.2/asynchbase-1.8.2.jar;C:/Users/zhang/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.7/log4j-over-slf4j-1.7.7.jar;C:/Users/zhang/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar;C:/Users/zhang/.m2/repository/org/json/json/20090211/json-20090211.jar;C:/Users/zhang/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.5/jackson-annotations-2.9.5.jar;C:/Users/zhang/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar;C:/Users/zhang/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar;C:/Users/zhang/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar;C:/Users/zhang/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar;C:/Users/zhang/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar;C:/Users/zhang/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar;C:/Users/zhang/.m2/repository/org/jgrapht/jgrapht-core/0.9.1/jgrapht-core-0.9.1.jar;C:/Users/zhang/.m2/repository/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar;C:/Users/zhang/.m2/repository/org/ow2/asm/asm/4.0/asm-4.0.jar;C:/Users/zhang/.m2/repository/ch/qos/logback/logback-core/1.0.13/logback-core-1.0.13.jar;C:/Users/zhang/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar;C:/Users/zhang/.m2/repository/net/opentsdb/opentsdb_gwt_theme/1.0.0/opentsdb_gwt_theme-1.0.0.jar;C:/Users/zhang/.m2/repository/com/esotericsoftware/kryo/kryo/2.21.1/kryo-2.21.1.jar;C:/Users/zhang/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar;C:/Users/zhang/.m2/repository/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar;C:/Users/zhang/.m2/repository/com/google/gwt/gwt-user/2.6.0/gwt-user-2.6.0.jar;C:/Users/zhang/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar;C:/Users/zhang/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar;C:/Users/zhang/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'D:/code/opentsdb/src-main;D:/code/opentsdb/target/generated-sources'
+-author
+-bottom
+'Copyright © 2010-2022,             The OpenTSDB Authors'
+-charset
+'UTF-8'
+-d
+'D:/code/opentsdb/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'OpenTSDB 2.4.1 API'
+-linkoffline
+'http://download.oracle.com/javase/6/docs/api' 'D:/code/opentsdb/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'OpenTSDB 2.4.1 API'
